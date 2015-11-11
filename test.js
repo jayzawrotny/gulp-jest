@@ -59,3 +59,20 @@ it('should handle multiple files passed', function(cb) {
       cb();
     }, 7000);
 });
+
+it('should only run tests in the given dir', function(cb) {
+    var stream = gulp.src('__tests__/subtest/*.js')
+        .pipe(jest({rootDir: process.cwd()}));
+
+    var numberOfOccurences = 0;
+    process.stdout.write = function (str) {
+        out(str);
+        if (/test passed/.test(str)) {
+          numberOfOccurences += 1;
+        }
+    };
+    setTimeout(function() {
+      assert.equal(numberOfOccurences, 1);
+      cb();
+    }, 7000);
+});
