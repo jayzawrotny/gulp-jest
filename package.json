@@ -21,15 +21,15 @@
   },
   "homepage": "https://github.com/Dakuan/gulp-jest",
   "dependencies": {
-    "jest-cli": "^0.4.0",
-    "gulp-util": "^3.0.0",
-    "through2": "^0.5.1",
-    "react-tools": "^0.12.1"
+    "jest-cli": "*",
+    "gulp-util": "*",
+    "through2": "^2.0.0",
+    "react-tools": "*"
   },
   "devDependencies": {
-    "assert": "^1.1.1",
-    "mocha": "^1.21.3",
-    "gulp": "^3.8.7"
+    "assert": "*",
+    "mocha": "*",
+    "gulp": "^3.9.0"
   },
   "keywords": [
     "gulpplugin",
