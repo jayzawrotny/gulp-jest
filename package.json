@@ -22,7 +22,7 @@
   "homepage": "https://github.com/Dakuan/gulp-jest",
   "dependencies": {
     "jest-cli": "*",
-    "gulp-util": "",
+    "gulp-util": "*",
     "through2": "^2.0.0",
     "react-tools": "*"
   },
